@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy-900: #070E15;
+  --color-yellow-500: #FFD52A;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+.btn-primary {
+  @apply bg-yellow-500 text-navy-900 font-semibold py-2 px-4 rounded-lg
+         hover:bg-yellow-400 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-navy-900 text-white font-semibold py-2 px-4 rounded-lg
+         hover:bg-navy-800 transition-colors duration-200;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-sm p-6;
+}
+
+.input {
+  @apply border border-gray-300 rounded-lg px-4 py-2
+         focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent;
+}
+
+.heading-1 {
+  @apply text-3xl font-bold text-navy-900;
+}
+
+.heading-2 {
+  @apply text-2xl font-semibold text-navy-900;
+}
+
+.heading-3 {
+  @apply text-xl font-semibold text-navy-900;
+}

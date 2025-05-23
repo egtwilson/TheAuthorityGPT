@@ -1,0 +1,14 @@
+{
+  "name": "theauthoritygpt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prepare": "pnpm install -r",
+    "dev": "pnpm --parallel -r run dev",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter server start",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean"
+  }
+}
